@@ -42,7 +42,7 @@ const SelectChamp = ({ champs }: { champs: Champion[] }) => {
                             </button>
                         </div>
                     )}
-                    <div className="flex flex-wrap gap-2 items-center text-center">
+                    <div className="flex flex-wrap gap-2 items-center text-center justify-center">
                         {options}
                     </div>
                 </div>

@@ -12,7 +12,7 @@ const SpellDisplay = ({ spell, cdr }: { spell: any; cdr: number }) => {
                 }`}
             >
                 <p>{i + 1} - </p>
-                <p key={i}>{(spell.cooldown[i] * (1 - cdr)).toFixed(2)}s</p>
+                <p key={i}>{(spell.cooldown[i] * (1 - cdr)).toFixed(1)}s</p>
             </button>
         );
     }
