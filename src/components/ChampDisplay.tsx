@@ -17,7 +17,7 @@ const ChampDisplay = ({ champ }: { champ: Champion }) => {
         <div className="flex flex-col gap-1">
             <button onClick={openModal}>
                 <img
-                    src={`http://ddragon.leagueoflegends.com/cdn/13.17.1/img/champion/${champ.id}.png`}
+                    src={`https://ddragon.leagueoflegends.com/cdn/13.17.1/img/champion/${champ.id}.png`}
                 />
             </button>
             {champ.name}

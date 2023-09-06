@@ -16,7 +16,7 @@ const useDdragon = () => {
 
         try {
             const response = await axios.get(
-                `http://ddragon.leagueoflegends.com/cdn/${version}/data/en_US/champion.json`
+                `https://ddragon.leagueoflegends.com/cdn/${version}/data/en_US/champion.json`
             );
             const data = response.data.data;
             return data;
@@ -28,7 +28,7 @@ const useDdragon = () => {
     const fetchChampionInfo = async (champion: string) => {
         try {
             const response = await axios.get(
-                `http://ddragon.leagueoflegends.com/cdn/13.17.1/data/en_US/champion/${champion}.json`
+                `https://ddragon.leagueoflegends.com/cdn/13.17.1/data/en_US/champion/${champion}.json`
             );
             const data = response.data.data;
             return data;
