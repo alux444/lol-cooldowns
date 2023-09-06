@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-const SpellDisplay = ({ spell }: { spell: any }) => {
+const SpellDisplay = ({ spell, cdr }: { spell: any; cdr: number }) => {
     const [level, setLevel] = useState(1);
 
     const increaseLevel = () => {
@@ -21,8 +23,15 @@ const SpellDisplay = ({ spell }: { spell: any }) => {
                 src={`https://ddragon.leagueoflegends.com/cdn/13.17.1/img/spell/${spell.image.full}`}
             />
             <p>Level: {level}</p>
-            <button onClick={increaseLevel}>Level up</button>
-            <button onClick={decreaseLevel}>Level down</button>
+            <div className="flex gap-1">
+                <button onClick={increaseLevel}>
+                    <KeyboardArrowUpIcon />
+                </button>
+                <button onClick={decreaseLevel}>
+                    <KeyboardArrowDownIcon />
+                </button>
+            </div>
+            <p>{(spell.cooldown[level - 1] * (1 - cdr)).toFixed(2)}s</p>
         </div>
     );
 };

@@ -18,13 +18,8 @@ function App() {
         setAllChamps();
     }, []);
 
-    function test() {
-        console.log(champs);
-    }
-
     return (
         <div className="w-screen flex text-center flex-col items-center">
-            <button onClick={test}>Test</button>
             <SelectChamp champs={champs} />
         </div>
     );

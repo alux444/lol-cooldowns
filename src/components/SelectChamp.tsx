@@ -7,7 +7,6 @@ const SelectChamp = ({ champs }: { champs: Champion[] }) => {
     ));
     return (
         <div className="flex flex-col gap-1 p-3">
-            SelectChamp
             <div className="flex flex-wrap gap-2 items-center text-center">
                 {options}
             </div>
