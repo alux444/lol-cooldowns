@@ -1,15 +1,14 @@
 import { Champion } from "../utils/Champion";
+import ChampDisplay from "./ChampDisplay";
 
 const SelectChamp = ({ champs }: { champs: Champion[] }) => {
-    const options = champs.map((champ) => (
-        <div>
-            <p>{champ.name}</p>
-        </div>
-    ));
+    const options = champs.map((champ) => <ChampDisplay champ={champ} />);
     return (
-        <div>
+        <div className="flex flex-col gap-1 p-3">
             SelectChamp
-            {options}
+            <div className="flex flex-wrap gap-2 items-center text-center">
+                {options}
+            </div>
         </div>
     );
 };

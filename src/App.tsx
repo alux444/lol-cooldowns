@@ -6,7 +6,7 @@ import SelectChamp from "./components/SelectChamp";
 function App() {
     const [champs, setChamps] = useState<Champion[]>([]);
 
-    const { fetchChamps, fetchChampionInfo } = useDdragon();
+    const { fetchChamps } = useDdragon();
 
     const setAllChamps = async () => {
         const champs = await fetchChamps();
@@ -23,7 +23,7 @@ function App() {
     }
 
     return (
-        <div className="w-screen h-screen items-center">
+        <div className="w-screen flex text-center flex-col items-center">
             <button onClick={test}>Test</button>
             <SelectChamp champs={champs} />
         </div>
