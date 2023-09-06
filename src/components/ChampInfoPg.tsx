@@ -51,7 +51,7 @@ const ChampInfoPg = ({ champ }: { champ: Champion }) => {
                     />
                 </div>
                 <p>CDR: {(cdr * 100).toFixed(0)}%</p>
-                <div className="flex flex-wrap gap-1 w-full items-center justify-center">
+                <div className="flex flex-wrap gap-1 w-full items-start justify-start">
                     {abilities}
                 </div>
             </div>
