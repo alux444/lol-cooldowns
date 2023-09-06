@@ -40,11 +40,10 @@ const ChampInfo = ({
 
     return (
         <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-black bg-opacity-50 z-10 w-screen h-screen">
-            <div className="bg-slate-300 flex flex-col p-3 gap-2 rounded-lg shadow-md flex items-center z-2 overflow-auto w-fit h-fit">
+            <div className="bg-slate-200 flex flex-col p-3 gap-2 rounded-lg shadow-md flex items-center z-2 overflow-auto w-fit h-fit">
                 <div className="flex flex-col text-center text-wrap justify-center w-full">
                     <button onClick={closeInfo}>&times;</button>
                     <div className="block items-center p-1">
-                        {champ.name}
                         <img
                             className="mx-auto w-[64px] h-[64px]"
                             src={`https://ddragon.leagueoflegends.com/cdn/13.17.1/img/champion/${champ.id}.png`}
