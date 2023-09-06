@@ -20,6 +20,7 @@ const SpellDisplay = ({ spell, cdr }: { spell: any; cdr: number }) => {
     return (
         <div className="flex items-center p-1 flex-col">
             <img
+                className="h-[60px] w-[60px]"
                 src={`https://ddragon.leagueoflegends.com/cdn/13.17.1/img/spell/${spell.image.full}`}
             />
             {cooldowns}
