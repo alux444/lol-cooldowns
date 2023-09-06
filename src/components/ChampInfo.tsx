@@ -46,7 +46,7 @@ const ChampInfo = ({
                     <div className="block items-center p-1">
                         {champ.name}
                         <img
-                            className="mx-auto"
+                            className="mx-auto w-[64px] h-[64px]"
                             src={`https://ddragon.leagueoflegends.com/cdn/13.17.1/img/champion/${champ.id}.png`}
                         />
                     </div>
