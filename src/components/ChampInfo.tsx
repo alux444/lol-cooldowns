@@ -47,7 +47,7 @@ const ChampInfo = ({
                         {champ.name}
                         <img
                             className="mx-auto"
-                            src={`http://ddragon.leagueoflegends.com/cdn/13.17.1/img/champion/${champ.id}.png`}
+                            src={`https://ddragon.leagueoflegends.com/cdn/13.17.1/img/champion/${champ.id}.png`}
                         />
                     </div>
                     <div className="flex gap-1 items-center justify-center">
