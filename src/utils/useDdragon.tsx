@@ -19,9 +19,10 @@ const useDdragon = () => {
             const response = await axios.get(
                 `http://ddragon.leagueoflegends.com/cdn/${version}/data/en_US/champion.json`
             );
-            const data = response.data;
+            const data = response.data.data;
 
-            console.log(data);
+            console.log(data.data);
+            return data;
         } catch (error) {
             console.error("Error fetching data:", error);
         }
