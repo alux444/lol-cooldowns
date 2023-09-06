@@ -2,7 +2,9 @@ import { Champion } from "../utils/Champion";
 import ChampDisplay from "./ChampDisplay";
 
 const SelectChamp = ({ champs }: { champs: Champion[] }) => {
-    const options = champs.map((champ) => <ChampDisplay champ={champ} />);
+    const options = champs.map((champ) => (
+        <ChampDisplay champ={champ} key={champ.key} />
+    ));
     return (
         <div className="flex flex-col gap-1 p-3">
             SelectChamp
